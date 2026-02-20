@@ -1,0 +1,31 @@
+---
+// src/components/Navbar.astro
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-oken-sand/50">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="/" class="shrink-0 flex items-center gap-3">
+      <img src="/images/oken-logo.png" alt="OKEN Logo" class="h-10 w-auto object-contain" />
+      <div class="flex flex-col items-center justify-center">
+        <span class="text-2xl font-serif font-bold text-oken-blue tracking-widest leading-none mt-1">OKEN</span>
+        <span class="text-[0.65rem] font-sans font-medium text-oken-blue/70 tracking-[0.2em] leading-none mt-2 uppercase">Oakland</span>
+      </div>
+    </a>
+    
+    <nav class="hidden md:flex gap-8 items-center text-sm font-medium tracking-wide">
+      <a href="#menus" class="hover:text-oken-blue transition-colors">Menus</a>
+      <a href="#info" class="hover:text-oken-blue transition-colors">Location & Hours</a>
+      <a href="https://order.toasttab.com/egiftcards/oken-6200-claremont-avenue" target="_blank" rel="noopener noreferrer" class="hover:text-oken-blue transition-colors">Gift Cards</a>
+      <a href="https://www.opentable.com/restref/client/?rid=1432471&restref=1432471&lang=en-US&color=2&r3uid=cfe&dark=true&ot_source=Restaurant%20website&corrid=187e3eee-a66c-4d06-94d7-d4fa601f6be7" target="_blank" rel="noopener noreferrer" class="bg-oken-blue text-white px-6 py-2.5 rounded-full hover:bg-oken-blue-light hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+        Reservations
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden p-2 text-oken-blue">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+</header>

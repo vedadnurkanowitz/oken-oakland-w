@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero';
+import ActionCards from '../components/ActionCards';
+import InfoSection from '../components/InfoSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="OKEN OAKLAND | Modern Japanese Cuisine">
+	<Navbar />
+	
+	<main>
+		<Hero client:load />
+		<InfoSection />
+		<ActionCards client:visible />
+	</main>
+	
+	<Footer />
+</Layout>

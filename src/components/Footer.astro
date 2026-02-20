@@ -1,0 +1,22 @@
+---
+// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-oken-dark text-oken-white py-12 mt-20">
+  <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+    <div class="text-3xl font-serif font-bold tracking-widest text-oken-sand relative z-10">
+      OKEN
+    </div>
+    <div class="text-sm font-medium text-white/60 tracking-wider relative z-10">
+      &copy; {currentYear} OKEN OAKLAND. ALL RIGHTS RESERVED.
+    </div>
+    <div class="flex gap-6 text-sm relative z-10">
+      <a href="mailto:hi@okenoakland.com" class="hover:text-oken-wood transition-colors">hi@okenoakland.com</a>
+      <a href="tel:5108444130" class="hover:text-oken-wood transition-colors">510-844-4130</a>
+    </div>
+
+     <!-- Subtle decorative element -->
+    <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-oken-blue rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+  </div>
+</footer>
